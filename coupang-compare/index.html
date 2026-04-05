@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>속옷/양말 수납함 비교</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Apple SD Gothic Neo', sans-serif; background: #f5f5f5; padding: 24px; }
+  h1 { text-align: center; margin-bottom: 8px; font-size: 24px; }
+  .subtitle { text-align: center; color: #888; margin-bottom: 32px; font-size: 14px; }
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 960px; margin: 0 auto; }
+  .card {
+    background: #fff; border-radius: 16px; overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08); transition: transform 0.2s;
+    display: flex; flex-direction: column;
+  }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+  .card.pick { border: 2px solid #e44d26; }
+  .pick-badge {
+    position: absolute; top: 12px; left: 12px; background: #e44d26; color: #fff;
+    padding: 4px 10px; border-radius: 8px; font-size: 12px; font-weight: 700; z-index: 1;
+  }
+  .img-wrap {
+    position: relative; background: #fafafa; text-align: center;
+    height: 240px; display: flex; align-items: center; justify-content: center; overflow: hidden;
+  }
+  .img-wrap img {
+    max-width: 100%; max-height: 100%; object-fit: contain;
+  }
+  .info { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+  .tags { margin-bottom: 8px; }
+  .tag { display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 6px; margin-right: 4px; }
+  .tag.rocket { background: #e3f2fd; color: #1565c0; }
+  .tag.black { background: #333; color: #fff; }
+  .tag.best { background: #fff3e0; color: #e65100; }
+  .tag.transparent { background: #e8f5e9; color: #2e7d32; }
+  .name { font-size: 15px; font-weight: 600; line-height: 1.5; margin-bottom: 12px; color: #222; }
+  .specs { font-size: 13px; color: #666; line-height: 1.8; margin-bottom: 16px; flex: 1; }
+  .specs li { list-style: none; padding-left: 16px; position: relative; }
+  .specs li::before { content: "·"; position: absolute; left: 4px; color: #999; }
+  .price { font-size: 22px; font-weight: 800; color: #e44d26; margin-bottom: 16px; }
+  .price .unit { font-size: 13px; font-weight: 400; color: #999; }
+  .btn {
+    display: block; text-align: center; background: #1a73e8; color: #fff;
+    text-decoration: none; padding: 14px; border-radius: 10px;
+    font-size: 15px; font-weight: 600; transition: background 0.2s;
+  }
+  .btn:hover { background: #1557b0; }
+  .footer { text-align: center; margin-top: 32px; color: #aaa; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<h1>속옷/양말 수납함 비교</h1>
+<p class="subtitle">옷걸이장 가운데 선반용 (30x30cm) · 반투명 · 로켓배송</p>
+
+<div class="grid">
+
+  <!-- 1번: 데미무드 10칸 블랙 -->
+  <div class="card pick">
+    <div class="img-wrap">
+      <span class="pick-badge">추천</span>
+      <img src="https://mootagongmarket.com/web/product/big/202306/e66d38303586f28479e2a1db9197867e.jpg" alt="적층식 칸칸이 속옷정리함" loading="lazy">
+    </div>
+    <div class="info">
+      <div class="tags">
+        <span class="tag rocket">로켓배송</span>
+        <span class="tag black">블랙</span>
+      </div>
+      <div class="name">데미무드 이클립 적층식 칸칸이 서랍형 속옷정리함 10칸 (반투명 블랙 2개)</div>
+      <ul class="specs">
+        <li>10칸 칸막이 — 속옷/양말/런닝 분리</li>
+        <li>반투명 PP 소재, 내구성 우수</li>
+        <li>적층 가능 — 선반 여러 단 활용</li>
+        <li>블랙 프레임 → 옷걸이장과 색상 통일</li>
+      </ul>
+      <div class="price">22,100원 <span class="unit">/ 2개</span></div>
+      <a class="btn" href="https://link.coupang.com/a/eiijc7" target="_blank">쿠팡에서 보기</a>
+    </div>
+  </div>
+
+  <!-- 2번: 데미무드 15칸 화이트 -->
+  <div class="card">
+    <div class="img-wrap">
+      <img src="https://mootagongmarket.com/web/product/extra/big/20230620/ba4451043cd1e8e61d3220b81bd804ea.jpg" alt="적층식 15칸 속옷정리함" loading="lazy">
+    </div>
+    <div class="info">
+      <div class="tags">
+        <span class="tag rocket">로켓배송</span>
+        <span class="tag best">양말 최적</span>
+      </div>
+      <div class="name">데미무드 이클립 적층식 칸칸이 서랍형 속옷정리함 15칸 (반투명 화이트 2개)</div>
+      <ul class="specs">
+        <li>15칸 — 양말 등 소품 세분화에 최적</li>
+        <li>반투명 PP 소재</li>
+        <li>적층 가능</li>
+        <li>화이트 프레임</li>
+      </ul>
+      <div class="price">22,100원 <span class="unit">/ 2개</span></div>
+      <a class="btn" href="https://link.coupang.com/a/eiijej" target="_blank">쿠팡에서 보기</a>
+    </div>
+  </div>
+
+  <!-- 3번: 투명해요 슬라이딩 -->
+  <div class="card">
+    <div class="img-wrap">
+      <img src="https://mootagongmarket.com/web/product/extra/big/20230620/d599786f5bf02ad49559446b2440c6b5.jpg" alt="슬라이딩 속옷정리함" loading="lazy">
+    </div>
+    <div class="info">
+      <div class="tags">
+        <span class="tag rocket">로켓배송</span>
+        <span class="tag transparent">완전 투명</span>
+      </div>
+      <div class="name">속옷정리함 "투명해요" 슬라이딩 아크릴 칸막이 서랍장</div>
+      <ul class="specs">
+        <li>완전 투명 아크릴 소재</li>
+        <li>슬라이딩 서랍 — 꺼내기 편리</li>
+        <li>칸막이 조절 가능</li>
+        <li>깔끔한 디자인</li>
+      </ul>
+      <div class="price">19,800원 <span class="unit">/ 1개</span></div>
+      <a class="btn" href="https://link.coupang.com/a/eiijuL" target="_blank">쿠팡에서 보기</a>
+    </div>
+  </div>
+
+  <!-- 4번: 데미무드 1칸 단품 -->
+  <div class="card">
+    <div class="img-wrap">
+      <img src="https://mootagongmarket.com/web/product/extra/big/20230620/e8454ad00b2a7c4e7960540d3eb14f7b.jpg" alt="데미무드 1칸 단품" loading="lazy">
+    </div>
+    <div class="info">
+      <div class="tags">
+        <span class="tag rocket">로켓배송</span>
+      </div>
+      <div class="name">데미무드 이클립 적층식 칸칸이 서랍형 속옷정리함 1칸 (반투명 화이트)</div>
+      <ul class="specs">
+        <li>1칸 단품 — 필요한 만큼 추가 구매</li>
+        <li>반투명 PP 소재</li>
+        <li>적층 가능</li>
+        <li>가장 저렴한 단가</li>
+      </ul>
+      <div class="price">11,400원 <span class="unit">/ 1개</span></div>
+      <a class="btn" href="https://link.coupang.com/a/eiikdq" target="_blank">쿠팡에서 보기</a>
+    </div>
+  </div>
+
+  <!-- 5번: 데미무드 10칸 화이트 4개 -->
+  <div class="card">
+    <div class="img-wrap">
+      <img src="https://mootagongmarket.com/web/product/extra/big/20230620/0242f96df351ff15e567f27d2a9210da.jpg" alt="데미무드 10칸 화이트 4개" loading="lazy">
+    </div>
+    <div class="info">
+      <div class="tags">
+        <span class="tag rocket">로켓배송</span>
+        <span class="tag best">대량 세트</span>
+      </div>
+      <div class="name">데미무드 이클립 적층식 칸칸이 서랍형 속옷정리함 10칸 (반투명 화이트 4개)</div>
+      <ul class="specs">
+        <li>10칸 x 4개 — 선반 전체 채우기</li>
+        <li>반투명 PP 소재</li>
+        <li>적층 가능</li>
+        <li>세트 할인 가격</li>
+      </ul>
+      <div class="price">42,700원 <span class="unit">/ 4개</span></div>
+      <a class="btn" href="https://link.coupang.com/a/eiikcx" target="_blank">쿠팡에서 보기</a>
+    </div>
+  </div>
+
+  <!-- 6번: 한샘 칸칸칸 -->
+  <div class="card">
+    <div class="img-wrap">
+      <img src="https://image.hanssem.com/hsimg/gds/550/807/807023_A1.jpg" alt="한샘 칸칸칸 속옷정리함" loading="lazy">
+    </div>
+    <div class="info">
+      <div class="tags">
+        <span class="tag rocket">로켓배송</span>
+        <span class="tag best">브랜드</span>
+      </div>
+      <div class="name">한샘 칸칸칸 양말 속옷정리함 (1칸/10칸/15칸 선택)</div>
+      <ul class="specs">
+        <li>한샘 브랜드 — 품질 보증</li>
+        <li>1+1 구성 가능</li>
+        <li>칸 수 선택 가능 (1/10/15칸)</li>
+        <li>반투명 PP 소재</li>
+      </ul>
+      <div class="price">11,800원~ <span class="unit">/ 옵션별</span></div>
+      <a class="btn" href="https://link.coupang.com/a/eiikdM" target="_blank">쿠팡에서 보기</a>
+    </div>
+  </div>
+
+</div>
+
+<p class="footer">가격은 참고용입니다. 정확한 가격과 상세 사진은 쿠팡 링크에서 확인하세요. · 2026-04-05 생성</p>
+
+</body>
+</html>
